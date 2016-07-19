@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'SetupoDev_Example' do
+  pod 'SetupoDev', :path => '../'
+
+  target 'SetupoDev_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end
